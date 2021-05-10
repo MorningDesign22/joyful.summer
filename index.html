@@ -32,17 +32,18 @@
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js"></script>
     <script type="text/javascript">
-     if (screen.width < 768) {
-         document.write(
-             '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">'
-         );
-     } else {
-         document.write('<meta name="viewport" content="width=980">');
-     }
 
-     $("#btnMenu").on("click", function () {
-     $(this).toggleClass("menu-open");
-      });
+$(function() {
+    $('#btnMenu').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.gNavi').addClass('active');
+        } else {
+            $('.gNavi').removeClass('active');
+        }
+    });
+});
    
     $(function(){
       var pagetop = $('#page_top');
@@ -76,7 +77,7 @@
                     <li class="first"><a href="/menu/">メニュー<em>Menu</em></a></li>
                     <li><a href="/shop/index">店舗検索<em>Shop</em></a></li>
                     <li><a href="/safety/">食の安全・安心<em>Safety</em></a>
-                        <ul>
+                        <ul class="safety">
                             <li class="first"><a href="/safety/quality/"></a></li>
                             <li><a href="/safety/factory/">自社工場の取り組み</a></li>
                             <li><a href="/safety/nutrition/">栄養分析値・アレルゲン情報</a></li>
@@ -224,16 +225,16 @@
         <div class="container">
         <section class="news">
             <div class="news01">
-                <h5>■販売開始日時 <br class="sp-br">2021年5月18日(火)15時</h5>
-                <h5>■対象店舗　 全国のジョイフル<br class="sp-br"><span class="sm-attention">&emsp;※一部店舗では取扱いがございません。</span></h5>
+                <p>■販売開始日時 <br class="sp-br">&emsp;2021年5月18日(火)15時</p>
+                <p>■対象店舗　 <br class="sp-br">全国のジョイフル<br class="sp-br"><span class="sm-attention">&emsp;※一部店舗では取扱いがございません。</span></p>
                 <ul class="attention">
-                    <li>※当社で提供しているお米は全て国産米を使用しております。</li>
-                    <li>※メニューの付け合わせの野菜等は変更する場合がございます。</li>
-                    <li>※食器は変更する場合がございます。</li>
-                    <li>※栄養成分は食材の日本食品標準成分表の数値もしくは検査機関の分析値を基に計算した値です。</li>
-                    <li>※調理器具、食器類、揚げ油は同一のものを使用しており、本来メニューに含まれないアレルギー物質が意図せず混入する場合がございます。</li>
-                    <li>※一部店舗では販売商品、販売時間、販売価格が異なります。</li>
-                    <li>※期間限定メニューにつき、商品がなくなり次第販売終了とさせていただきます。</li>
+                    <li class="sm-li">※当社で提供しているお米は全て国産米を使用しております。</li>
+                    <li class="sm-li">※メニューの付け合わせの野菜等は変更する場合がございます。</li>
+                    <li class="sm-li">※食器は変更する場合がございます。</li>
+                    <li class="sm-li">※栄養成分は食材の日本食品標準成分表の数値もしくは検査機関の分析値を基に計算した値です。</li>
+                    <li class="sm-li">※調理器具、食器類、揚げ油は同一のものを使用しており、本来メニューに含まれないアレルギー物質が意図せず混入する場合がございます。</li>
+                    <li class="sm-li">※一部店舗では販売商品、販売時間、販売価格が異なります。</li>
+                    <li class="sm-li">※期間限定メニューにつき、商品がなくなり次第販売終了とさせていただきます。</li>
                 </ul>
             </div>
         </section>
