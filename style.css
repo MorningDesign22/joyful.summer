@@ -7,6 +7,7 @@
 }
 body{
     margin: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
 }
 #header {
     height: 103px;
@@ -270,7 +271,7 @@ main {
     padding: 20px 0;
     margin-bottom: 40px;
     color: #502700;
-    font-family: "Hiragino Kaku Gothic Pro"
+    font-family: "Hiragino Kaku Gothic Pro";
 }
 .sp-br {
     display: none;
@@ -281,7 +282,7 @@ main {
     font-size: 1.5rem;
     padding: 10px;
     margin-bottom: 20px;
-    font-family: "Osaka";
+    font-family: "Meiryo";
 }
 .food-menu {
     display: flex;
@@ -304,6 +305,7 @@ main {
 }
 .price {
     font-size: 29px;
+    font-weight: bold;
     color: #f8b500;
     margin: 1.5rem 0;
     font-family: "Trebuchet MS";
@@ -351,7 +353,7 @@ main {
     padding: 24px;
 }
 
-.news01 h5 {
+.news01 p {
     font-size: 1rem;
     margin-bottom: 12px;
     line-height: 20px;;
@@ -360,7 +362,7 @@ main {
     font-size: 10px;
 }
 
-.attention ul {
+.sm-li{
     font-size: 8px!important;
 }
 
@@ -514,7 +516,8 @@ a {
     height: auto;
     margin: 0;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+
 }
 #gNavi ul {
     margin: 0;
@@ -527,6 +530,8 @@ a {
     height: auto;
     border-bottom: 1px solid #fcf9dc;
     background: #f8b500;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
 }
 #gNavi li a {
     display: block;
@@ -675,7 +680,7 @@ a {
     }
     .text-box{
         margin-left:0;
-        padding: 0 10px;
+        padding: 0 ;
         width: 100%;
     }
     
@@ -686,9 +691,16 @@ a {
     .news {
         width: 100%;
     }
+    .news01 p{
+        font-size: 0.9rem;
+    }
     .attention {
         font-size: 12px;
     }
+    .sm-li{
+        font-size: 6px!important;
+    }
+    
     .attention li {
         padding-bottom: 5px;
     }
