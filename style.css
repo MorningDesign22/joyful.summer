@@ -367,11 +367,12 @@ main {
 .fair-menu {
     background-color: #f8b500;
     text-align: center;
+    line-height: 30px;
     font-size: 150%;
     padding: 20px 0;
     margin-bottom: 40px;
     color: #502700;
-    font-family: "Hiragino Kaku Gothic Pro"
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
 }
 .sp-br {
     display: none;
@@ -382,7 +383,7 @@ main {
     font-size: 1.5rem;
     padding: 10px;
     margin-bottom: 20px;
-    font-family: "Meiryo";
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
 }
 .food-menu {
     display: flex;
@@ -401,7 +402,7 @@ main {
 }
 .text-box > h3 {
     font-size: 23px;
-    font-family: "Meiryo";
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
 }
 .price {
     font-size: 29px;
@@ -416,11 +417,11 @@ main {
 .kcal {
     font-size: 12px;
     margin-bottom: 25px;
-    font-family: "MS PGothic";
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
     font-weight: bold;
 }
 .thisisimage {
-    font-family: "Arial";
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
     font-size: 12px;
 }
 .small-text {
@@ -458,7 +459,7 @@ main {
     font-size: 1rem;
     margin-bottom: 12px;
     line-height: 20px;;
-    font-family: 'Verdana';
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
 }
 .sm-attention   {
     font-size: 10px;
@@ -466,7 +467,7 @@ main {
 
 .sm-li{
     font-size: 8px!important;
-    font-family: 'sans-serif'
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
 }
 
 
@@ -956,7 +957,7 @@ a {
     }
     .thisisimage {
         margin-bottom: 10px;
-        font-family: "Arial";
+        font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴPro W3", Osaka, 'メイリオ', Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Arial, Helvetica, Verdana, sans-serif;    src: url(http://www.adobe.com/);
     }
     .img {
         width: 100%;
