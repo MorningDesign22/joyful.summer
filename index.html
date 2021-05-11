@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://www.joyfull.co.jp/cp/fairs/2021/spring-fair-1st/img/share_logo.jpg">
     <meta property="og:site_name" content="春フェアが登場！ ">
     <meta property="og:type" content="website">
-    </head> <!--グーグルアナリスと -->
+    </head> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
@@ -26,24 +26,25 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
         </style>
 
-    <!-- jQuery読み込み ハンバーガーメニュー・ページ遷移-->
+    <!-- jQuery読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
     <script src="./js/script.js"></script>
     <script async="" src="//www.google-analytics.com/analytics.js"></script>
     <script async="" src="https://d.line-scdn.net/n/line_tag/public/release/v1/lt.js"></script>
     <script type="text/javascript">
+     if (screen.width < 768) {
+         document.write(
+             '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">'
+         );
+     } else {
+         document.write('<meta name="viewport" content="width=980">');
+     }
 
-$(function() {
-    $('#btnMenu').click(function() {
-        $(this).toggleClass('active');
- 
-        if ($(this).hasClass('active')) {
-            $('.gNavi').addClass('active');
-        } else {
-            $('.gNavi').removeClass('active');
-        }
-    });
-});
+     $("#btnMenu").on("click", function () {
+     $(this).toggleClass("menu-open");
+
+     console.log("menu-open")
+      });
    
     $(function(){
       var pagetop = $('#page_top');
@@ -64,41 +65,77 @@ $(function() {
       });
 
     });
-</script>
+
+
+    (function(g, d, o) {
+      g._ltq = g._ltq || [];
+      g._lt = g._lt || function() {
+        g._ltq.push(arguments)
+      };
+      var h = location.protocol === 'https:' ? 'https://d.line-scdn.net' : 'http://d.line-cdn.net';
+      var s = d.createElement('script');
+      s.async = 1;
+      s.src = o || h + '/n/line_tag/public/release/v1/lt.js';
+      var t = d.getElementsByTagName('script')[0];
+      t.parentNode.insertBefore(s, t);
+    })(window, document);
+    _lt('init', {
+      customerType: 'lap',
+      tagId: 'a7b4a1d7-e99a-4c95-930b-8912302599e3'
+    });
+    _lt('send', 'pv', ['a7b4a1d7-e99a-4c95-930b-8912302599e3']);
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://tr.line.me/tag.gif?c_t=lap&t_id=a7b4a1d7-e99a-4c95-930b-8912302599e3&e=pv&noscript=1" />
+  </noscript>
+
 
 </head>
-<body>
-    <header id="header">
-        <div id="headerIn">
-            <h1 id="headerLogo"><a href="/"><img class="opacityOver" src="img/logo.jpg" width="172" height="40" alt="ファミリーレストラン ジョイフル [Joyfull]"></a></h1>
+<body id="gDef" class="lDef">
+    <div id="wrapper">
+      <header id="header">
+      <div id="headerIn">
+        <h1 id="headerLogo"><a href="/"><img class="opacityOver" src="img/logo.jpg" width="172" height="40" alt="ファミリーレストラン ジョイフル [Joyfull]"></a></h1>
+        <nav id="gNavi">
+              <ul>
+                  <li class="first"><a href="https://www.joyfull.co.jp/menu/">メニュー<em>Menu</em></a></li>
+                  <li><a href="https://www.joyfull.co.jp/shop/index">店舗検索<em>Shop</em></a></li>
+                  <li><a href="https://www.joyfull.co.jp/safety/">食の安全・安心<em>Safety</em></a>
+                      <ul>
+                          <li class="first"><a href="https://www.joyfull.co.jp/safety/quality/">品質管理</a></li>
+                          <li><a href="https://www.joyfull.co.jp/safety/factory/">自社工場の取り組み</a></li>
+                          <li><a href="https://www.joyfull.co.jp/safety/nutrition/">栄養分析値・アレルゲン情報</a></li>
+                          <li class="last"><a href="https://www.joyfull.co.jp/safety/producing/">原産地情報</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="https://www.joyfull.co.jp/company/">会社情報<em>Company</em></a></li>
+                  <li class="last"><a href="https://www.joyfull.co.jp/recruiting/">採用情報<em>Recruit</em></a></li>
+              </ul>
+          <!-- /gNavi --></nav>
 
-            <nav id="gNavi">
-                <ul>
-                    <li class="first"><a href="/menu/">メニュー<em>Menu</em></a></li>
-                    <li><a href="/shop/index">店舗検索<em>Shop</em></a></li>
-                    <li><a href="/safety/">食の安全・安心<em>Safety</em></a>
-                        <ul class="safety">
-                            <li class="first"><a href="/safety/quality/"></a></li>
-                            <li><a href="/safety/factory/">自社工場の取り組み</a></li>
-                            <li><a href="/safety/nutrition/">栄養分析値・アレルゲン情報</a></li>
-                            <li class="last"><a href="/safety/producing/">原産地情報</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/company/">会社情報<em>Company</em></a></li>
-                    <li class="last"><a href="/recruiting/">採用情報<em>Recruit</em></a></li>
-                </ul>
-            <!-- /gNavi --></nav>
-            <span id="btnMenu" class="active">MENU</span>
-        <!-- /headerIn --></div>
-    </header>
-    <div id="breadcrumb">
+          <div class="drawer-content">
+            <div class="drawer-content__items">
+              <div class="drawer-content__item"><a href="https://www.joyfull.co.jp/menu/">メニュー</a></div>
+              <div class="drawer-content__item"><a href="https://www.joyfull.co.jp/shop/index">店舗検索</a></div>
+              <div class="drawer-content__item"><a href="https://www.joyfull.co.jp/safety/">食の安全・安心</a></div>
+              <div class="drawer-content__item"><a href="https://www.joyfull.co.jp/company/">会社情報</a></div>
+              <div class="drawer-content__item"><a href="https://www.joyfull.co.jp/recruiting/">採用情報</a></div>
+            </div>
+          </div>
+
+          
+
+          <span id="" class="btnMenu">MENU</span>
+          <span class="btn_menu"></span>
+      <!-- /headerIn --></div>
+  </header>    <div id="breadcrumb">
         <div id="breadcrumbIn">
-            <ul>
-                <li class="first"><a href="/">トップ</a>＞</li>
-                <li><a href="https://www.joyfull.co.jp/menu/">メニュー</a>＞</li>
-                <li class="last">夏フェアが登場！</li>
-            </ul>
-            <!-- /breadcrumbIn -->
+          <ul>
+            <li class="first"><a href="http://www.joyfull.co.jp/">トップ</a>＞</li>
+            <li class="last">夏フェアが登場!</li>
+          </ul> <!-- /breadcrumbIn -->
+        </div>
+              <!-- /breadcrumbIn -->
         </div>
         <!-- /breadcrumb -->
     </div>
@@ -223,20 +260,22 @@ $(function() {
         </section>
     
         <div class="container">
-        <section class="news">
-            <div class="news01">
-                <p>■販売開始日時 <br class="sp-br">&emsp;2021年5月18日(火)15時</p>
-                <p>■対象店舗　 <br class="sp-br">全国のジョイフル<br class="sp-br"><span class="sm-attention">&emsp;※一部店舗では取扱いがございません。</span></p>
-                <ul class="attention">
-                    <li class="sm-li">※当社で提供しているお米は全て国産米を使用しております。</li>
-                    <li class="sm-li">※メニューの付け合わせの野菜等は変更する場合がございます。</li>
-                    <li class="sm-li">※食器は変更する場合がございます。</li>
-                    <li class="sm-li">※栄養成分は食材の日本食品標準成分表の数値もしくは検査機関の分析値を基に計算した値です。</li>
-                    <li class="sm-li">※調理器具、食器類、揚げ油は同一のものを使用しており、本来メニューに含まれないアレルギー物質が意図せず混入する場合がございます。</li>
-                    <li class="sm-li">※一部店舗では販売商品、販売時間、販売価格が異なります。</li>
-                    <li class="sm-li">※期間限定メニューにつき、商品がなくなり次第販売終了とさせていただきます。</li>
-                </ul>
-            </div>
+            <section class="news">
+                <div class="news01">
+                    <p>■販売開始日時 <br class="sp-br">&emsp;2021年5月18日(火)15時</p>
+                    <p>■対象店舗　 <br class="sp-br">全国のジョイフル<br class="sp-br"><span class="sm-attention">&emsp;※一部店舗では取扱いがございません。</span></p>
+                    <ul class="attention">
+                        <li class="sm-li">※当社で提供しているお米は全て国産米を使用しております。</li>
+                        <li class="sm-li">※メニューの付け合わせの野菜等は変更する場合がございます。</li>
+                        <li class="sm-li">※食器は変更する場合がございます。</li>
+                        <li class="sm-li">※栄養成分は食材の日本食品標準成分表の数値もしくは検査機関の分析値を基に計算した値です。</li>
+                        <li class="sm-li">※調理器具、食器類、揚げ油は同一のものを使用しており、本来メニューに含まれないアレルギー物質が意図せず混入する場合がございます。</li>
+                        <li class="sm-li">※一部店舗では販売商品、販売時間、販売価格が異なります。</li>
+                        <li class="sm-li">※期間限定メニューにつき、商品がなくなり次第販売終了とさせていただきます。</li>
+                    </ul>
+                </div>
+            </section>
+                </div>
         </section>
         <p id="page_top">
             <a href="#"><img src="img/page-top.jpg" alt=""></a>
@@ -251,7 +290,7 @@ $(function() {
 		<!--<p class="pageTop static" style="display: block;"><a href="#wrapper"><img src="/common/img/pagetop.gif" width="56" height="56" alt="Page Top"></a></p>-->
 		<p id="footerLogo">
 			<img src="img/footerlogo.jpg" width="144" height="34" alt="ファミリーレストラン ジョイフル Joyfull Restaurant">
-			<img src="img/kurumi.jpg" class="kurumin2021" width="" height="" alt="くるみんマーク">
+			<img src="img/kurumi.png" class="kurumin2021" width="" height="" alt="くるみんマーク">
 
 		</p>
 		<div id="footerLinks">
@@ -348,6 +387,11 @@ $(function() {
 		<p id="copyrightIn">Copyright © Joyfull Co.,Ltd.All rights reserved.</p>
 		<!-- /copyright -->
 	</div>
-</footer></body>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
 
 </html>
