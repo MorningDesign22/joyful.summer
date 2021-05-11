@@ -67,6 +67,11 @@
     });
 
 
+
+    
+
+
+
     (function(g, d, o) {
       g._ltq = g._ltq || [];
       g._lt = g._lt || function() {
@@ -89,6 +94,7 @@
     <img height="1" width="1" style="display:none" src="https://tr.line.me/tag.gif?c_t=lap&t_id=a7b4a1d7-e99a-4c95-930b-8912302599e3&e=pv&noscript=1" />
   </noscript>
 
+ 
 
 </head>
 <body id="gDef" class="lDef">
@@ -389,8 +395,33 @@
 	</div>
 </footer>
 
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="./js/script.js"></script>
+
+<script>
+    jQuery('.btnMenu').on('click', function(e) {
+  e.preventDefault();
+
+
+  jQuery('.btnMenu').toggleClass('is-active');
+  jQuery('.btn_menu').toggleClass('is-active');
+  jQuery('.drawer-content').toggleClass('is-active');
+
+  return false;
+});
+
+jQuery('.btn_menu').on('click', function(e) {
+e.preventDefault();
+
+
+jQuery('.btnMenu').toggleClass('is-active');
+jQuery('.btn_menu').toggleClass('is-active');
+jQuery('.drawer-content').toggleClass('is-active');
+
+return false;
+
+});
+</script>
 
 </body>
 
