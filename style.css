@@ -420,7 +420,7 @@ main {
     font-weight: bold;
 }
 .thisisimage {
-    font-family: "Arial, Helvetica, Verdana, sans-serif";
+    font-family: "Arial";
     font-size: 12px;
 }
 .small-text {
@@ -458,6 +458,7 @@ main {
     font-size: 1rem;
     margin-bottom: 12px;
     line-height: 20px;;
+    font-family: 'Verdana';
 }
 .sm-attention   {
     font-size: 10px;
@@ -465,6 +466,7 @@ main {
 
 .sm-li{
     font-size: 8px!important;
+    font-family: 'sans-serif'
 }
 
 
@@ -954,6 +956,7 @@ a {
     }
     .thisisimage {
         margin-bottom: 10px;
+        font-family: "Arial";
     }
     .img {
         width: 100%;
