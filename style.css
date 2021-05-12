@@ -410,9 +410,8 @@ main {
 }
 .kcal {
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 25px;
-}
-.thisisimage {
 }
 .small-text {
     font-size: 15px;
