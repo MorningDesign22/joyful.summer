@@ -455,7 +455,9 @@ main {
 
 .sm-li{
     font-size: 12px;
-
+}
+.sm-attention {
+    margin-left: 1rem;
 }
 ul li {
     list-style: none;
