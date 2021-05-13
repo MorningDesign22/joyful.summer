@@ -427,6 +427,10 @@ main {
     right: 24px;
     bottom: 0;
 }
+.thisisimage {
+    font-size: 12px;
+}
+
 /*Attention*/
 .news {
     width: 980px;
@@ -944,7 +948,7 @@ a {
         line-height: 30px;
     }
     .thisisimage {
-        font-size: 12px;
+        font-size: 11px;
         margin-bottom: 10px;
     }
     .img {
